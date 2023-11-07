@@ -1,5 +1,6 @@
 public class Giocattolo {
-    private int id;
+    private static Integer codiceProgressivo = 1;
+    private final int id;
     private String nome;
     private double prezzo;
     private int etaConsigliata;
@@ -8,6 +9,8 @@ public class Giocattolo {
         this.nome = nome;
         this.prezzo = prezzo;
         this.etaConsigliata = etaConsigliata;
+        id = codiceProgressivo;
+        codiceProgressivo++;
     }
 
     public int getId(){
