@@ -3,6 +3,7 @@ public class Cliente {
     private final int id;
     private String nome;
     private String indirizzoEmail;
+    private Permessi permesso =  Permessi.USER;    
 
     public Cliente(String nome, String indirizzoEmail){
         this.nome = nome;
